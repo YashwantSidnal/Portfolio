@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #16161a;
+}
+
+.waving-icon {
+  transform: rotate(-15deg) translate(3px, -5px);
+  animation-name: wave-animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(-15deg) translate(3px, -5px);
+  }
+  50% {
+    transform: rotate(14deg) translate(3px, -5px);
+  }
+  100% {
+    transform: rotate(-4deg) translate(3px, -5px);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.contactForm {
+  position: relative;
+  width: 100%;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #7f5af0 0%,
+    #38bdf8 10%,
+    transparent 10%,
+    transparent 50%
+  );
+  animation: animate 6s linear infinite;
+  border-radius: 10px;
+}
+
+.contactForm::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #38bdf8 0%,
+    #7f5af0 10%,
+    transparent 10%,
+    transparent 50%
+  );
+  border-radius: 10px;
+  animation: animate 6s linear infinite;
+  animation-delay: -1s;
+}
+
+.contactForm::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border: 20px solid #21222c;
+  border-radius: 10px;
+  background: #21222c;
+}
+
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes animate {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+}
+
+.icon {
+  position: relative;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #7f5af0 0%,
+    #7f5af0 10%,
+    transparent 10%,
+    transparent 50%
+  );
+  border-radius: 100%;
+  animation: animate2 6s linear infinite;
+}
+
+.icon::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #7f5af0 0%,
+    #7f5af0 10%,
+    transparent 10%,
+    transparent 50%
+  );
+  border-radius: 100%;
+  animation: animate2 6s linear infinite;
+  animation-delay: -1.1s;
+}
+
+.icon::after {
+  content: "";
+  inset: 2px;
+  position: absolute;
+  border-radius: 100%;
+  background: #21222c;
+}
+
+@keyframes animate2 {
+  0% {
+    --a: 360deg;
+  }
+
+  25% {
+    --a: 270deg;
+  }
+
+  100% {
+    --a: 0deg;
+  }
+}
+
+.animate-sleep {
+  animation: sleep 3s linear infinite;
+}
+@keyframes sleep {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(32px, 35px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
