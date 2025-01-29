@@ -8,7 +8,7 @@ import Skills from "../components/Skills";
 import { Link } from "react-router-dom";
 const About = () => {
   return (
-    <section className="h-full p-3 lg:h-screen flex flex-col justify-center items-center bg-about-pattern bg-cover bg-center bg-no-repeat py-10 sm:py-20">
+    <section className="h-full p-3 flex flex-col justify-center items-center bg-about-pattern bg-cover bg-center bg-no-repeat py-10 sm:py-20">
       {/* Title Section */}
       <Title title="About Me" />
       <div className="flex flex-col max-w-6xl mx-auto  md:flex-row items-center  gap-6 lg:gap-12   rounded-2xl p-6 lg:p-12 shadow-lg mb-6">

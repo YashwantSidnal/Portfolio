@@ -66,7 +66,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="p-4 sm:p-20 max-w-7xl mx-auto h-full lg:h-screen flex flex-col justify-center items-center ">
+    <section className="p-4 sm:p-20 max-w-7xl mx-auto h-full  flex flex-col justify-center items-center ">
       <Title title="Contact" />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className="space-y-3 text-center lg:text-left">
