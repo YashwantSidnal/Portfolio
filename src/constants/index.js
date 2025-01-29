@@ -3,7 +3,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import blog from "../assets/blog.png";
 import blog2 from "../assets/blog2.png";
 import blog3 from "../assets/blog3.png";
-import c1 from "../assets/c1.png";
+import c1 from "../assets/C1.png";
 import a1 from "../assets/Amazon1.png";
 import a2 from "../assets/Amazon2.png";
 import a3 from "../assets/Amazon3.png";
