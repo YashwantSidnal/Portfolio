@@ -1,8 +1,4 @@
 import { FaLinkedin, FaSquareGithub, FaSquareXTwitter } from "react-icons/fa6";
-import { FaInstagramSquare } from "react-icons/fa";
-import blog from "../assets/blog.png";
-import blog2 from "../assets/blog2.png";
-import blog3 from "../assets/blog3.png";
 import c1 from "../assets/C1.png";
 import a1 from "../assets/Amazon1.png";
 import a2 from "../assets/Amazon2.png";
@@ -74,7 +70,6 @@ import {
 import {
     SiTableau,
     SiMysql,
-
     SiNumpy,
     SiPandas,
 } from "react-icons/si";
@@ -89,5 +84,4 @@ export const skillsData = [
     { name: "Python", icon: FaPython },
     { name: "NumPy", icon: SiNumpy },
     { name: "Pandas", icon: SiPandas },
-
 ];
