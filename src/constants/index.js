@@ -9,30 +9,10 @@ import a2 from "../assets/Amazon2.png";
 import a3 from "../assets/Amazon3.png";
 import h1 from "../assets/h1.png";
 import h2 from "../assets/h2.png";
+import cc from "../assets/cc.jpg";
+import hrd from "../assets/hrd.jpg";
 
 
-
-import cs from "../assets/cs.jpg";
-import {
-    FaBootstrap,
-    FaCss3Alt,
-    FaGithub,
-    FaHtml5,
-    FaJava,
-    FaNodeJs,
-    FaReact,
-} from "react-icons/fa6";
-import {
-    SiExpress,
-    SiGit,
-    SiJavascript,
-    SiMongodb,
-    SiTailwindcss,
-} from "react-icons/si";
-
-
-
-import weather from "../assets/weather.png";
 
 export const navData = [
     { id: 1, path: "/", label: "Home" },
@@ -56,13 +36,13 @@ export const projectsData =
             "skills": ["Power BI", "Excel", "Python"]
         },
         {
-            "image": [h1, h2],
+            "image": [hrd, h1, h2],
             "title": "HR Analytics Dashboard Project",
             "description": "Optimized a Power BI dashboard for analyzing HR data of 1,470 employees, highlighting key metrics like 16.1% attrition rate and $6.5K average salary. Discovered attrition patterns and visualized job satisfaction trends to drive organizational improvements.",
             "skills": ["Power BI", "SQL", "Excel"]
         },
         {
-            "image": [c1, c1],
+            "image": [cc, c1],
             "title": "Call Center Trends Analysis",
             "description": "Developed a Power BI dashboard to analyze call center performance, improving workforce management efficiency by 15%. Conducted data cleaning, exploration, and visualization to identify trends and actionable insights.",
             "skills": ["Power BI", "Python", "SQL"]
